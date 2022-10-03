@@ -12,9 +12,9 @@ export default function SearchBar({onSearch}) {
       e.preventDefault();
       onSearch(city);
     }}>
-      <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Ciudad..." aria-label="Ciudad..." aria-describedby="basic-addon1" onChange={e=>handleInputChange(e)}></input>
-      <input className='btn text-light btn-outline-dark' type="submit" value="Agregar" />
+      <div class="input-group ">
+      <input type="text" class="form-control" placeholder="City..." aria-label="City..." aria-describedby="basic-addon1" onChange={e=>handleInputChange(e)}></input>
+      <input className='btn text-light btn-primary' type="submit" value="Add" />
       </div>
     </form>
   );
