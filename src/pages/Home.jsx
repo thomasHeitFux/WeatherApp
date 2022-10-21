@@ -16,7 +16,7 @@ export default function Home() {
       const data = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?lat=${crd.latitude}&lon=${crd.longitude}&appid=${apiKey}`
       );
-      const res = await axios(`http://api.openweathermap.org/data/2.5/weather?q=${data.data.name}&appid=${apiKey}&units=metric`)
+      const res = await axios(`https://api.openweathermap.org/data/2.5/weather?q=${data.data.name}&appid=${apiKey}&units=metric`)
       const recurse = res.data;
       const ciudad = {
         country: recurse.sys.country,
