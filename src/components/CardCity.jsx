@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-export default function CardCity({ min, max, name, img, onClose, id }) {
+export default function CardCity({ min, max, name, img, onClose,country, id }) {
 
   return (
     <Card className='d-flex align-items-end shadow mb-3 rounded   ' bg='light'  style={{ width: '250px' }}>
@@ -12,6 +12,7 @@ export default function CardCity({ min, max, name, img, onClose, id }) {
       <Card.Img className='' src={"http://openweathermap.org/img/wn/" + img + "@2x.png"} style={{ width: '90px' }}/>
       </div>
       <Card.Body className='text-primary'>
+      <Card.Title>{country}</Card.Title>
         <Card.Title>{name}</Card.Title>
         <Card.Text>
           min:
